@@ -6,6 +6,7 @@
 # Folders
 _obj
 _test
+src
 
 # Architecture specific extensions/prefixes
 *.[568vq]
@@ -22,3 +23,7 @@ _testmain.go
 *.exe
 *.test
 *.prof
+*.pdf
+raspberry-instaprinter
+bin
+bindata.go

@@ -1,0 +1,108 @@
+body {
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "proxima-nova",sans-serif;
+}
+
+#header {
+    background: #ffffff;
+    height: 75px;
+    margin-top:0;
+    padding:0;
+    border-bottom: 2px solid #ededed;
+    color: black;
+}
+
+#header .logo  {
+    float: left;
+    margin: 12px;
+    margin-left: 20px
+}
+
+#images {
+    padding-top: 20px;
+}
+
+.date {
+    font-weight: bold;
+}
+
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    display: block;
+    opacity: 1.0;
+    background-color: #fff;
+    background: #ffffff url('/asset/boldsie_logo_big.png') no-repeat center;
+    z-index: 99;
+    text-align: center;
+}
+
+h2.updated {
+    float: left;
+    color: black;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    padding-bottom: 0;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+h2.timer {
+    float: right;
+    color: black;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+/* GRID */
+
+div.item {
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    background: #ededed;
+    position:relative;
+}
+
+div.item-inner {
+    opacity: 0.8;
+    background: white;
+    width: 100%;
+    padding: 0px;
+    position: absolute;
+    bottom: 0;
+    color: black;
+}
+
+div.item-inner p {
+    font-size: 0.9em;
+}
+
+div.item-inner div.item-text {
+    padding: 0 10px 0 10px;
+    width: 60%;
+    float:left;
+}
+
+div.item-attr {
+    width: 20%;
+    float:right;
+    text-align: right;
+    padding: 13px;
+}
+
+span.likes, span.comments {
+    display:block;
+}
+
+span.comments {
+    margin-left: 5px;
+}

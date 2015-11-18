@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Instagram Monitor</title>
+<meta http-equiv="refresh" content="35">
+
+    <link href="/asset/style.css" media="screen" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<script language="javascript" type="text/javascript">
+  $(window).load(function() {
+    $('#loading').fadeOut('slow');
+
+	var sec = $('#timer span').text() || 0;
+	var timer = setInterval(function() {
+	   $('#timer span').text(--sec);
+	   if (sec == 0) {
+	      $('#timer').fadeOut('fast');
+	      clearInterval(timer);
+	   }
+	}, 1000);
+	
+  });
+</script>
+</head>
+
+<body>
+	
+
+<div id="loading">
+</div>
+
+<div id="header">
+	<img src="/asset/boldsie-logo-small.png" height="50px" class="logo" />
+    <h2 class="updated">Updated <span class="date">2015-11-10 23:17:27</span>. This page contains <strong>17</strong> photos with an average of <strong>22 days</strong> between photos.<span id="counter"></span></h2>
+    <h2 class="timer" id="timer">Refreshing in <span>35</span></h2>
+</div>
+
+<div id="images">
+
+<script>
+    $(document).ready(function() {
+//        $('.images').masonry({
+//            // set itemSelector so .grid-sizer is not used in layout
+//            itemSelector: '.grid-item',
+//            // use element for option
+//            columnWidth: '.grid-sizer',
+//            percentPosition: true
+//        });
+
+        $( ".date" ).each(function( index ) {
+            $(this).text(moment($(this).text()).fromNow());
+        });
+     });
+</script>
+
+</body>
+</html>

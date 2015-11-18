@@ -1,0 +1,3 @@
+    export GOPATH=$(pwd)
+    go get -u github.com/jteeuwen/go-bindata/...
+    make dev
